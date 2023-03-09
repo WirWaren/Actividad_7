@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('cursos', function (Blueprint $table) {
             $table->id();
+            $table->string('Llave_Curso');
+            $table->string('Kit_Robotica');
+            $table->string('Nombre_Curso');
             $table->timestamps();
         });
     }
