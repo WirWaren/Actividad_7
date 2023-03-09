@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('escuelas', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->char('correo');
-            $table->char('contraseña');
+            $table->string('correo');
+            $table->string('contraseña');
             $table->string('rol');
             $table->timestamps();
         });

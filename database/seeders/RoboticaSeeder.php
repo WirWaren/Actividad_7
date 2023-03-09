@@ -19,6 +19,25 @@ class RoboticaSeeder extends Seeder
         DB::table('escuelas')->insert([
             'nombre' => 'Admon',
             'correo' => 'admon@robotics.com',
+            'contraseña' => 'Adm@2022',
+            'rol' => 'Administrativo'
+
+        ]);
+
+        DB::table('escuelas')->insert([
+            'nombre' => 'Tecmilenio',
+            'correo' => 'tecmilenio@robotics.com',
+            'contraseña' => 'Adm@2022',
+            'rol' => 'Profesor'
+
+        ]);
+
+        DB::table('escuelas')->insert([
+            'nombre' => 'Estudiante',
+            'correo' => 'student@robotics.com',
+            'contraseña' => 'Adm@2022',
+            'rol' => 'Estudiante'
+
         ]);
   
     }
