@@ -19,7 +19,7 @@ class EscuelaFactory extends Factory
         return [
             
             'nombre' => $this->faker->name(),
-            'correo' => $this->faker->name(),
+            'correo' => $this->faker->unique()->safeEmail(),
             'contraseña' => $this->faker->name(),
             'rol' => $this->faker->name(),
             
