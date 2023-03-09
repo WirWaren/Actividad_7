@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
+use App\Models\Escuela;
 
 class RoboticaSeeder extends Seeder
 {
@@ -15,7 +16,9 @@ class RoboticaSeeder extends Seeder
      */
     public function run()
     {
+        Escuela::factory()->count(100)->create();
         //
+        /*
         DB::table('escuelas')->insert([
             'nombre' => 'Admon',
             'correo' => 'admon@robotics.com',
@@ -39,6 +42,8 @@ class RoboticaSeeder extends Seeder
             'rol' => 'Estudiante'
 
         ]);
-  
+        */
+
+
     }
 }
