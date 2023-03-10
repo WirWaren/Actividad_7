@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call(RoboticaSeeder::class);
+        $this->call(CursosSeeder::class);
 
     }
 }
